@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>Brutăria Castraveț</title>
+  <style>
+    /* Stil general pentru tot corpul paginii */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8e1; /* Fundal crem */
+      color: #4e342e;            /* Culoare text maro închis */
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Stil pentru header */
+    header {
+      background-color: #ffcc80; /* Fundal portocaliu deschis */
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Titlul principal */
+    header h1 {
+      margin: 0;
+      color: #bf360c; /* Maro închis */
+    }
+
+    /* Stil pentru fiecare secțiune a paginii */
+    section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    /* Containerul cu imaginile produselor */
+    .gallery {
+      display: flex;             /* Elemente pe orizontală */
+      flex-wrap: wrap;           /* Se mută pe rând nou dacă e nevoie */
+      justify-content: center;   /* Centrare orizontală */
+      gap: 20px;                 /* Spațiu între imagini */
+      margin-top: 20px;
+    }
+
+    /* Stil pentru fiecare imagine din galerie */
+    .gallery a img {
+      height: 200px;   /* Înălțime fixă, toate imaginile au aceeași înălțime */
+      width: auto;     /* Lățimea se ajustează proporțional */
+      border-radius: 10px; /* Colțuri rotunjite */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Umbre ușoare */
+      transition: transform 0.3s ease; /* Tranziție pentru efect hover */
+    }
+
+    /* Efect la trecerea cu mouse-ul peste imagine */
+    .gallery a img:hover {
+      transform: scale(1.05); /* Mic zoom */
+    }
+
+    /* Stil pentru footer */
+    footer {
+      background-color: #ffcc80; /* Fundal portocaliu deschis */
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    /* Stil pentru textele din secțiuni cu info */
+    .info {
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    /* Stil pentru linkuri */
+    a {
+      color: #5d4037;           /* Maro mediu */
+      text-decoration: none;    /* Fără subliniere */
+    }
+
+    /* Subliniere la hover pe link */
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header-ul paginii cu titlu și slogan -->
+  <header>
+    <h1>Brutăria Castraveț</h1>
+    <p>Gustul copilăriei care ți-l poate aduce doar brutăria noastră.l </p>
+  </header>
+
+  <!-- Secțiunea "Despre Noi" -->
+  <section>
+    <h2>Despre Noi</h2>
+    <p>Suntem o brutărie de familie, specializată în pâine artizanală coaptă cu dragoste. 
+      Folosim ingrediente naturale, fără aditivi, pentru un gust autentic.</p>
+  </section>
+
+  <!-- Secțiunea cu produsele și imaginile lor -->
+  <section>
+    <h2>Produsele Noastre</h2>
+    <div class="gallery">
+
+      <!-- Pâine rustică - imagine + link către rețetă -->
+      <a href="https://savoriurbane.com/paine-taraneasca-de-casa-cu-coaja-crocanta/" target="_blank" title="Vezi rețeta de pâine rustică">
+        <img src="https://i.imgur.com/h338a48.jpeg" alt="Pâine rustică">
+      </a>
+
+      <!-- Pâine pufoasă de casă -->
+      <a href="https://pofta-buna.com/paine-pufoasa-de-casa-cu-iaurt/" target="_blank" title="Vezi rețeta de pâine pufoasă de casă">
+        <img src="https://i.imgur.com/ZM3NBFm.png" alt="Pâine pufoasă de casă">
+      </a>
+
+      <!-- Cozonac cu nuci -->
+      <a href="https://evz.ro/cozonac-pufos-cu-nuca-reteta.html" target="_blank" title="Vezi rețeta de cozonac cu nuci">
+        <img src="https://i.imgur.com/bnTTJgz.png" alt="Cozonac cu nuci">
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Secțiunea program de funcționare -->
+  <section>
+    <h2>Program de Funcționare</h2>
+    <div class="info">
+      <p>Luni - Vineri: 08:00 - 18:00</p>
+      <p>Sâmbătă: 08:00 - 14:00</p>
+      <p>Duminică: Închis</p>
+    </div>
+  </section>
+
+  <!-- Secțiunea contact -->
+  <section>
+    <h2>Contact</h2>
+    <div class="info">
+      <p>📍 Strada Panificației 12, Chișinău</p>
+      <p>📧 contact@paineabuna.md</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Brutăria Pâinea Bună. Toate drepturile rezervate.
+  </footer>
+</body>
+</html>
